@@ -1,0 +1,15 @@
+{
+    "theme": {
+      "slug": "vibes",
+      "name": "Vibes Theme",
+      "author": "Nicklas Bryntesson"
+    },
+    "dev": {
+        "browserSync": {
+          "live": true,
+          "proxyURL": "vibes.local",
+          "bypassPort": "8181",
+          "https": false
+        }
+    }
+}
