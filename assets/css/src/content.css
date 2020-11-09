@@ -22,12 +22,6 @@
 # Post and page content
 --------------------------------------------------------------*/
 
-/* Custom rule  for sticky posts:
-.sticky {
-
-}
-*/
-
 .entry {
 	margin-bottom: 1rem;
 }
@@ -82,7 +76,6 @@
 }
 
 @media (--content-query) {
-
 	.page-content > *,
 	.entry-content > *,
 	.entry-summary > *,
@@ -133,12 +126,10 @@
 }
 
 @media (--content-query) {
-
 	.entry-footer {
 		padding-right: 0;
 		padding-left: 0;
 	}
-
 }
 
 /*--------------------------------------------------------------
