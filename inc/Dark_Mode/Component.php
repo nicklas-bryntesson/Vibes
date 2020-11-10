@@ -28,6 +28,13 @@ class Component implements Component_Interface {
 	/**
 	 * Adds the action and filter hooks to integrate with WordPress.
 	 */
+	public function initialize() {
+		add_action( 'wp_enqueue_scripts', [ $this, 'action_enqueue_dark_mode' ] );
+	}
+
+	/**
+	 * Adds the action and filter hooks to integrate with WordPress.
+	 */
 	public function action_enqueue_dark_mode() {
 		wp_enqueue_script(
 			'wp-rig-dark-mode',

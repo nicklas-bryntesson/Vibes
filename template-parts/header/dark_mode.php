@@ -10,5 +10,5 @@ namespace WP_Rig\WP_Rig;
 ?>
 
 <div>
-	<button class="btn-toggle">Dark-Mode</button>
+	<button class="btn-toggle"><i class="fas fa-adjust"></i></button>
 </div>

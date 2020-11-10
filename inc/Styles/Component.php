@@ -98,6 +98,10 @@ class Component implements Component_Interface, Templating_Component_Interface {
 	 */
 	public function action_enqueue_styles() {
 
+		// Enqueue Font Awesome.
+		$fontawesome_kit_link = 'https://kit.fontawesome.com/1b80b7e287.js';
+		wp_enqueue_script( 'font-awesome-kit', $fontawesome_kit_link, [], null, false ); // phpcs:ignore WordPress.WP.EnqueuedResourceParameters.MissingVersion
+
 		// Enqueue Google Fonts.
 		$google_fonts_url = $this->get_google_fonts_url();
 		if ( ! empty( $google_fonts_url ) ) {
