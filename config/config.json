@@ -10,6 +10,11 @@
           "proxyURL": "vibes.local",
           "bypassPort": "8181",
           "https": false
-        }
-    }
+		},
+		"debug": {
+			"styles": true,
+			"scripts": false,
+			"phpcs": true
+		}
+	}
 }

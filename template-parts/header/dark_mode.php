@@ -9,6 +9,6 @@ namespace WP_Rig\WP_Rig;
 
 ?>
 
-<div>
-	<button class="btn-toggle"><i class="fas fa-adjust"></i></button>
+<div class="ui-controls">
+	<button aria-label="Activate light mode" title="Activate light mode" class="theme-toggle">Dark</i></button>
 </div>

@@ -28,6 +28,7 @@
 	--color-custom-daylight: #97c0b7;
 	--color-custom-sun: #eee9d1;
 
+	--color-text-main: #242122;
 	--color-link: #0073aa;
 	--color-link-visited: #333;
 	--color-link-active: #00a0d2;
@@ -39,6 +40,13 @@
 	--color-background-main: #2980b9;
 	--color-background-sidebar: #e36d60;
 	--color-background-footer: #c0392b;
+	--color-background-footer: #bc4950;
+
+	--color-vibes-white: #fdfcf7;
+	--color-vibes-black: #242122;
+	--color-vibes-grey: #adaaa5;
+	--color-vibes-yellow: #f7dc5a;
+	--color-vibes-red: #bc4950;
 
 	/* Custom editor font sizes */
 	--font-size-small: calc(16 / var(--global-font-size) * 1rem);

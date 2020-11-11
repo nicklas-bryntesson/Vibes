@@ -8,11 +8,17 @@
 namespace WP_Rig\WP_Rig\Dark_Mode;
 
 use WP_Rig\WP_Rig\Component_Interface;
+use function WP_Rig\WP_Rig\wp_rig;
 use function add_action;
+use function add_filter;
 use function wp_enqueue_script;
+use function get_theme_file_uri;
+use function get_theme_file_path;
+use function wp_script_add_data;
+use function wp_localize_script;
 
 /**
- * Enqueues and defer Dark Mode JavaScript.
+ * Dark Mode component.
  */
 class Component implements Component_Interface {
 
@@ -33,7 +39,9 @@ class Component implements Component_Interface {
 	}
 
 	/**
-	 * Adds the action and filter hooks to integrate with WordPress.
+	 * Enqueues JavaScript.
+	 *
+	 * To do: Follow Accessability Component pattern for passing down localization for the button aria labels
 	 */
 	public function action_enqueue_dark_mode() {
 		wp_enqueue_script(
@@ -43,7 +51,7 @@ class Component implements Component_Interface {
 			wp_rig()->get_asset_version( get_theme_file_path( '/assets/js/dark-mode.min.js' ) ),
 			false
 		);
-		wp_script_add_data( 'wp-rig-dark-mode', 'defer', true );
+		wp_script_add_data( 'wp-rig-dark-mode', 'async', true );
 		wp_script_add_data( 'wp-rig-dark-mode', 'precache', true );
 	}
 }
