@@ -204,6 +204,7 @@ select {
 .site-header {
 	padding-bottom: 1em;
 	background-color: var(--color-vibes-yellow);
+	display: grid;
 }
 
 .ui-controls {
@@ -212,6 +213,12 @@ select {
 	margin: 0 2em;
 	display: flex;
 	justify-content: flex-end;
+}
+
+.site-branding {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 
 .theme-toggle {
@@ -483,7 +490,7 @@ select {
 .site-main .posts-navigation,
 .site-main .post-navigation,
 .site-main .pagination {
-	border-bottom: 1px solid #111;
+	border-bottom: 2px solid #111;
 	margin: 0 auto 2em;
 	max-width: var(--content-width);
 	overflow: hidden;
@@ -586,14 +593,17 @@ select {
 --------------------------------------------------------------*/
 .site-footer {
 	margin: 0;
-	padding: 2em 0;
 	font-family: var(--highlight-font-family);
-	font-stretch: condensed;
+	color: #fff;
 	background-color: var(--color-background-footer);
 }
 
 .site-info {
+	background-color: var(--color-background-site-info);
 	text-align: center;
+	padding: 2em;
+	display: flex;
+	justify-content: space-between;
 }
 
 /*--------------------------------------------------------------
@@ -613,3 +623,29 @@ were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# Shame
+--------------------------------------------------------------*/
+
+/* Everything below is for testing purposes and should move into the right place after testing */
+
+/*
+@keyframes slideInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+.theme-toggle {
+	animation: 0.5s ease-out 2s 1 slideInFromTop;
+}
+
+.footer-widgets-area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2em;
+}
+*/

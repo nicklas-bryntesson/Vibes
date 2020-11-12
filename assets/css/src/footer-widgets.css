@@ -4,8 +4,13 @@
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2em;
+	padding: 0 2em;
 }
 
 .footer-widgets-area * {
 	min-width: 0;
+}
+
+.footer-widgets .widget {
+	color: white;
 }

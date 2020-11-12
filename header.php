@@ -39,8 +39,6 @@ namespace WP_Rig\WP_Rig;
 
 		<?php get_template_part( 'template-parts/header/dark_mode' ); ?>
 
-		<?php get_template_part( 'template-parts/header/custom_header' ); ?>
-
 		<?php get_template_part( 'template-parts/header/branding' ); ?>
 
 		<?php get_template_part( 'template-parts/header/navigation' ); ?>
