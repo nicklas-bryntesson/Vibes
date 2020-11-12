@@ -327,6 +327,12 @@ class Component implements Component_Interface, Templating_Component_Interface {
 					return is_page() && ! is_home();
 				},
 			],
+			'wp-rig-footer-widgets' => [
+				'file'             => 'footer-widgets.min.css',
+				'preload_callback' => function() {
+					return wp_rig()->is_footer_widgets_active();
+				},
+			],
 		];
 
 		/**
